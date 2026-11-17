@@ -34,6 +34,7 @@ section{padding:86px 0}.section-title{text-align:center;max-width:680px;margin:0
 .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px}.contact-dark{background:var(--forest);border-radius:21px;padding:32px;color:#fff}.contact-dark h3{font-size:24px;margin:0 0 8px}.contact-dark>p{font-size:14px;color:#d1dfd6;margin:0}.contact-line{display:flex;align-items:center;gap:13px;margin-top:24px;font-size:14px;color:#f0f4f0}.contact-symbol{width:42px;height:42px;border-radius:13px;background:#ffffff16;color:#e9c27c;display:grid;place-items:center;font-size:19px;flex:none}
 .contact-light{background:#fff;border:1px solid #e9e6dc;border-radius:21px;padding:32px}.contact-light h3{font-size:22px;color:var(--forest);margin:0 0 8px}.contact-light p{font-size:14px;color:var(--muted);margin:0}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 footer{background:#0b211b;color:#d5e0d8;padding:28px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{font-size:17px;color:#fff}
+.reviews{background:#fff}.review-wrap{max-width:850px;margin:auto}.review-form{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:28px}.review-form label{display:block;font-size:13px;font-weight:700;color:var(--forest);margin:12px 0 6px}.review-form input,.review-form textarea,.review-form select{width:100%;font:inherit;font-size:14px;border:1px solid #ddd9ce;border-radius:10px;padding:12px;background:#fff;color:var(--ink)}.review-form textarea{min-height:110px;resize:vertical}.review-note{font-size:12px;color:var(--muted);margin-top:12px}.review-form .btn{border:0;cursor:pointer;margin-top:16px}
 .quick-call{position:fixed;bottom:18px;left:18px;z-index:40;background:var(--gold);color:#17271f;padding:12px 18px;border-radius:50px;font-size:13px;font-weight:900;box-shadow:0 8px 24px #0003}
 @media(max-width:850px){.navlinks{gap:15px}.hero-grid{grid-template-columns:1fr;text-align:center;padding:48px 0}.hero-copy>p{margin-left:auto;margin-right:auto}.actions{justify-content:center}.hero-small{text-align:center}.visual{min-height:310px}.about-grid{gap:28px}.cards{gap:14px}}
 @media(max-width:680px){.wrap{width:calc(100% - 30px)}.top .wrap{justify-content:center}.top .wrap span:last-child{display:none}.nav{height:70px}.navlinks{display:none}.brand{font-size:21px}.nav .btn{font-size:12px;padding:10px 12px}.hero-grid{min-height:auto}.hero-copy>p{font-size:14px}.visual{min-height:270px}.visual-ring{width:245px;height:245px}.pallet-drawing{transform:scale(.82) perspective(800px) rotateY(-13deg) rotateX(5deg)}.highlight-grid{grid-template-columns:1fr;padding:18px 0;gap:13px}.highlight{justify-content:flex-start}.cards,.about-grid,.contact-grid{grid-template-columns:1fr}section{padding:62px 0}.section-title h2,.about-copy h2{font-size:26px}.about-art{min-height:270px}.card{padding:23px}.contact-dark,.contact-light{padding:25px}}
@@ -44,7 +45,7 @@ footer{background:#0b211b;color:#d5e0d8;padding:28px 0;font-size:12px}.foot{disp
 <div class="top"><div class="wrap"><span>تأمین و خرید و فروش پالت چوبی در تهران</span><span>برای استعلام قیمت، مستقیم با ما تماس بگیرید</span></div></div>
 <header><div class="wrap nav">
 <a class="brand" href="#home"><span class="brand-mark">▤</span><span>ایران پالت</span></a>
-<nav class="navlinks" aria-label="منوی اصلی"><a href="#home">صفحه اصلی</a><a href="#products">محصولات</a><a href="products.html">همه محصولات</a><a href="#guides">راهنمای خرید</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a></nav>
+<nav class="navlinks" aria-label="منوی اصلی"><a href="#home">صفحه اصلی</a><a href="#products">محصولات</a><a href="products.html">همه محصولات</a><a href="#guides">راهنمای خرید</a><a href="#about">درباره ما</a><a href="#reviews">نظرات</a><a href="#contact">تماس با ما</a></nav>
 <a class="btn btn-gold" href="tel:09385350359">☎ تماس با ما</a>
 </div></header>
 <main>
@@ -78,6 +79,23 @@ footer{background:#0b211b;color:#d5e0d8;padding:28px 0;font-size:12px}.foot{disp
 <div class="contact-grid"><div class="contact-dark"><h3>ایران پالت</h3><p>خرید و فروش پالت چوبی نو، دست دوم و ضایعات</p><div class="contact-line"><span class="contact-symbol">☎</span><span>۰۹۳۸۵۳۵۰۳۵۹</span></div><div class="contact-line"><span class="contact-symbol">⌖</span><span>تهران، جاده شهریار</span></div></div>
 <div class="contact-light"><h3>قیمت روز پالت را بپرسید</h3><p>قیمت بر اساس ابعاد، کیفیت، تعداد و وضعیت پالت مشخص می‌شود. برای دریافت اطلاعات دقیق، از راه‌های زیر با ما تماس بگیرید.</p><div class="contact-actions"><a class="btn btn-gold" href="tel:09385350359">تماس مستقیم</a><a class="btn btn-green" href="https://wa.me/989385350359" target="_blank" rel="noopener">پیام در واتساپ</a></div></div></div></div></section>
 </main>
+
+<section class="reviews" id="reviews"><div class="wrap"><div class="section-title"><span class="eyebrow">صدای مشتریان</span><h2>نظر و تجربه‌تان را با ما در میان بگذارید</h2><p>از اینکه تجربه همکاری‌تان با ایران پالت را ثبت می‌کنید سپاسگزاریم.</p></div>
+<div class="review-wrap"><form class="review-form" id="reviewForm"><label for="reviewName">نام شما</label><input id="reviewName" name="name" maxlength="60" placeholder="نام یا نام مجموعه" required>
+<label for="reviewRating">امتیاز شما</label><select id="reviewRating" name="rating"><option value="5">۵ از ۵ - عالی</option><option value="4">۴ از ۵ - خوب</option><option value="3">۳ از ۵ - متوسط</option><option value="2">۲ از ۵</option><option value="1">۱ از ۵</option></select>
+<label for="reviewText">متن نظر</label><textarea id="reviewText" name="review" maxlength="1000" placeholder="تجربه خرید یا همکاری‌تان را بنویسید..." required></textarea>
+<button class="btn btn-green" type="submit">ارسال نظر در واتساپ</button><p class="review-note">نظر شما برای ارسال در واتساپ آماده می‌شود؛ پس از بررسی و تأیید، می‌توانیم آن را در سایت نمایش دهیم. در حال حاضر نظر ساختگی یا تأییدنشده‌ای منتشر نشده است.</p></form></div></div></section>
 <footer><div class="wrap foot"><strong>ایران پالت</strong><span>خرید و فروش پالت چوبی · تهران، جاده شهریار</span><span>تماس: ۰۹۳۸۵۳۵۰۳۵۹</span><span>© تمامی حقوق محفوظ است.</span></div></footer>
 <a class="quick-call" href="tel:09385350359">☎ تماس سریع</a>
+<script>
+document.getElementById('reviewForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name=document.getElementById('reviewName').value.trim();
+ const rating=document.getElementById('reviewRating').value;
+ const review=document.getElementById('reviewText').value.trim();
+ if(!name || !review) return;
+ const message='نظر مشتری ایران پالت%0Aنام: '+encodeURIComponent(name)+'%0Aامتیاز: '+rating+'/5%0Aنظر: '+encodeURIComponent(review);
+ window.open('https://wa.me/989385350359?text='+message,'_blank','noopener');
+});
+</script>
 </body></html>
