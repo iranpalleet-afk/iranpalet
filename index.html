@@ -120,6 +120,34 @@ footer{border-top:3px solid #c99b52}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
+
+/* Daily pallet price table */
+.price-board{padding:34px 0 38px;background:#f7f5ef}
+.price-board .price-card{background:#fff;border:1px solid #e6e9e2;border-radius:18px;padding:22px;box-shadow:0 12px 34px #102d2510}
+.price-board .price-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.price-board h2{margin:0;color:#102d25;font-size:clamp(21px,3vw,29px)}
+.price-board .updated{font-size:13px;color:#58645c;background:#f1f4ef;border-radius:30px;padding:8px 13px;white-space:nowrap}
+.price-board table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:center}
+.price-board th,.price-board td{padding:13px 8px;border-bottom:1px solid #e9ede7;font-size:15px}
+.price-board th{background:#102d25;color:#fff;font-weight:800}
+.price-board th:first-child{border-radius:0 10px 0 0}
+.price-board th:last-child{border-radius:10px 0 0 0}
+.price-board td:first-child{font-weight:800;color:#20392c}
+.price-board tbody tr:last-child td{border-bottom:0}
+.price-board .new-price{color:#17613d;font-weight:800}
+.price-board .used-price{color:#9a6b20;font-weight:800}
+.price-board .price-note{margin:13px 0 0;color:#68736b;font-size:12px;line-height:1.9}
+@media(max-width:560px){
+.price-board{padding:25px 0}
+.price-board .price-card{padding:14px 9px;border-radius:13px}
+.price-board .price-head{align-items:flex-start;flex-direction:column;gap:8px;margin:0 5px 12px}
+.price-board .updated{font-size:11px;padding:6px 10px}
+.price-board th,.price-board td{padding:11px 3px;font-size:12px;letter-spacing:-.3px}
+.price-board th{font-size:11px}
+.price-board .price-note{font-size:11px;padding:0 5px}
+}
+@media(max-width:360px){.price-board th,.price-board td{font-size:10px;padding:10px 2px}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ایران پالت","description":"خرید و فروش پالت چوبی نو و دست دوم و خرید ضایعات پالت","telephone":"+989385350359","url":"https://iranpalleet-afk.github.io/iranpalet/","image":"https://iranpalleet-afk.github.io/iranpalet/file_00000000877c81fda17308ff654f722a.webp","address":{"@type":"PostalAddress","addressLocality":"تهران","streetAddress":"جاده شهریار","addressCountry":"IR"},"areaServed":"تهران"}</script>
 </head>
@@ -139,6 +167,28 @@ footer{border-top:3px solid #c99b52}
 <div class="hero-small">⌖ تهران، جاده شهریار</div></div>
 <div class="visual" aria-label="تصویر انبار پالت چوبی ایران پالت"><img src="./file_00000000877c81fda17308ff654f722a.webp" alt="انبار پالت چوبی ایران پالت؛ خرید و فروش پالت نو و دست دوم در تهران" fetchpriority="high" decoding="async" style="display:block;width:100%;max-width:520px;height:auto;max-height:390px;object-fit:contain;border-radius:20px;box-shadow:0 22px 55px #071b1466;position:relative;z-index:2"><div class="visual-label">ایران پالت · پالت نو و کارکرده</div></div>
 </div></section>
+
+<section class="price-board" id="daily-prices" aria-labelledby="daily-prices-title">
+ <div class="wrap">
+  <div class="price-card">
+   <div class="price-head">
+    <h2 id="daily-prices-title">جدول قیمت روز پالت چوبی</h2>
+    <span class="updated">آخرین بروزرسانی: ۱۴۰۵/۰۸/۲۸</span>
+   </div>
+   <table>
+    <thead><tr><th scope="col">ابعاد پالت</th><th scope="col">قیمت نو</th><th scope="col">قیمت دست دوم</th></tr></thead>
+    <tbody>
+     <tr><td>۱۰۰ × ۱۲۰</td><td class="new-price">۱٬۳۰۰٬۰۰۰ تومان</td><td class="used-price">۸۰۰٬۰۰۰ تومان</td></tr>
+     <tr><td>۸۰ × ۱۲۰</td><td class="new-price">۱٬۱۰۰٬۰۰۰ تومان</td><td class="used-price">۶۵۰٬۰۰۰ تومان</td></tr>
+     <tr><td>۱۱۰ × ۱۱۰</td><td class="new-price">۱٬۱۰۰٬۰۰۰ تومان</td><td class="used-price">۵۸۰٬۰۰۰ تومان</td></tr>
+     <tr><td>۱۱۰ × ۱۳۰</td><td class="new-price">۱٬۵۰۰٬۰۰۰ تومان</td><td class="used-price">۹۵۰٬۰۰۰ تومان</td></tr>
+     <tr><td>۱۰۰ × ۱۰۰</td><td class="new-price">۹۵۰٬۰۰۰ تومان</td><td class="used-price">۶۵۰٬۰۰۰ تومان</td></tr>
+    </tbody>
+   </table>
+   <p class="price-note">قیمت‌ها به تومان هستند و بر اساس اعلام ایران پالت درج شده‌اند. برای تأیید قیمت روز، موجودی و هزینه حمل با ما تماس بگیرید.</p>
+  </div>
+ </div>
+</section>
 <div class="highlights"><div class="wrap highlight-grid"><div class="highlight"><span class="hi-icon">▤</span>پالت چوبی نو و دست دوم</div><div class="highlight"><span class="hi-icon">↔</span>خرید و فروش و تأمین سفارش</div><div class="highlight"><span class="hi-icon">☎</span>ارتباط مستقیم و سریع</div></div></div>
 <section class="products" id="products"><div class="wrap"><div class="section-title"><span class="eyebrow">محصولات و خدمات</span><h2>هر نوع پالتی که نیاز دارید</h2><p>برای اطلاع از موجودی، ابعاد، تعداد و قیمت روز با ایران پالت تماس بگیرید.</p></div>
 <div class="cards">
