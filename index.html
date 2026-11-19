@@ -121,33 +121,48 @@ footer{border-top:3px solid #c99b52}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 
-/* Daily pallet price table */
-.price-board{padding:34px 0 38px;background:#f7f5ef}
-.price-board .price-card{background:#fff;border:1px solid #e6e9e2;border-radius:18px;padding:22px;box-shadow:0 12px 34px #102d2510}
-.price-board .price-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
-.price-board h2{margin:0;color:#102d25;font-size:clamp(21px,3vw,29px)}
-.price-board .updated{font-size:13px;color:#58645c;background:#f1f4ef;border-radius:30px;padding:8px 13px;white-space:nowrap}
-.price-board table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:center}
-.price-board th,.price-board td{padding:13px 8px;border-bottom:1px solid #e9ede7;font-size:15px}
-.price-board th{background:#102d25;color:#fff;font-weight:800}
-.price-board th:first-child{border-radius:0 10px 0 0}
-.price-board th:last-child{border-radius:10px 0 0 0}
-.price-board td:first-child{font-weight:800;color:#20392c}
+/* Premium daily pallet price board */
+.price-board{padding:42px 0 46px;background:linear-gradient(180deg,#f3f6f2 0%,#fff 100%);position:relative;overflow:hidden}
+.price-board:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#c79a4b,#1d6048,#c79a4b)}
+.price-board .price-card{position:relative;max-width:1000px;margin:auto;background:#fff;border:1px solid #e3eae3;border-radius:24px;padding:clamp(18px,3vw,30px);box-shadow:0 18px 55px rgba(16,45,37,.10);overflow:hidden}
+.price-board .price-card:before{content:"";position:absolute;top:0;right:0;width:180px;height:180px;background:radial-gradient(circle,rgba(199,154,75,.12),transparent 68%);pointer-events:none}
+.price-board .price-head{position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid #edf1eb}
+.price-board h2{margin:0;color:#102d25;font-size:clamp(22px,3vw,30px);font-weight:900;display:flex;align-items:center;gap:11px}
+.price-board h2:before{content:"";display:block;width:5px;height:30px;border-radius:8px;background:linear-gradient(180deg,#d5ad68,#9a7135)}
+.price-board .updated{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:800;color:#315b43;background:#edf5ee;border:1px solid #dcebdd;border-radius:30px;padding:9px 14px;white-space:nowrap}
+.price-board .updated:before{content:"◷";font-size:16px;color:#b1843f}
+.price-board table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;text-align:center;overflow:hidden;border:1px solid #e6ece5;border-radius:15px}
+.price-board th,.price-board td{padding:16px 10px;border-bottom:1px solid #edf1ec;font-size:15px}
+.price-board th{background:linear-gradient(135deg,#153b30,#245b43);color:#fff;font-weight:850;letter-spacing:-.2px}
+.price-board th:first-child{border-radius:0 13px 0 0}
+.price-board th:last-child{border-radius:13px 0 0 0}
+.price-board tbody tr{transition:background .2s ease}
+.price-board tbody tr:nth-child(even){background:#f8faf7}
+.price-board tbody tr:hover{background:#f0f6ef}
+.price-board td:first-child{font-weight:900;color:#20392c}
 .price-board tbody tr:last-child td{border-bottom:0}
-.price-board .new-price{color:#17613d;font-weight:800}
-.price-board .used-price{color:#9a6b20;font-weight:800}
-.price-board .price-note{margin:13px 0 0;color:#68736b;font-size:12px;line-height:1.9}
+.price-board .new-price,.price-board .used-price{font-weight:900;white-space:nowrap}
+.price-board .new-price{color:#17613d}
+.price-board .used-price{color:#9a6b20}
+.price-board .price-note{display:flex;align-items:flex-start;gap:8px;margin:17px 2px 0;padding:12px 14px;background:#faf8f2;border:1px solid #f0e9d9;border-radius:12px;color:#69736b;font-size:12px;line-height:1.9}
+.price-board .price-note:before{content:"ⓘ";color:#a47b3e;font-size:15px;font-weight:900}
 @media(max-width:560px){
-.price-board{padding:25px 0}
-.price-board .price-card{padding:14px 9px;border-radius:13px}
-.price-board .price-head{align-items:flex-start;flex-direction:column;gap:8px;margin:0 5px 12px}
-.price-board .updated{font-size:11px;padding:6px 10px}
-.price-board th,.price-board td{padding:11px 3px;font-size:12px;letter-spacing:-.3px}
+.price-board{padding:28px 0 32px}
+.price-board .price-card{padding:17px 10px;border-radius:18px}
+.price-board .price-head{align-items:flex-start;flex-direction:column;gap:11px;margin:0 4px 15px;padding-bottom:14px}
+.price-board h2{font-size:21px;gap:8px}
+.price-board h2:before{height:25px}
+.price-board .updated{font-size:11px;padding:7px 11px}
+.price-board th,.price-board td{padding:13px 3px;font-size:12px;letter-spacing:-.35px}
 .price-board th{font-size:11px}
-.price-board .price-note{font-size:11px;padding:0 5px}
+.price-board .new-price,.price-board .used-price{font-size:11px}
+.price-board .price-note{font-size:10px;padding:10px 9px;margin-top:13px}
 }
-@media(max-width:360px){.price-board th,.price-board td{font-size:10px;padding:10px 2px}}
-
+@media(max-width:360px){
+.price-board .price-card{padding:14px 7px}
+.price-board th,.price-board td{font-size:10px;padding:11px 2px}
+.price-board .new-price,.price-board .used-price{font-size:9px}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ایران پالت","description":"خرید و فروش پالت چوبی نو و دست دوم و خرید ضایعات پالت","telephone":"+989385350359","url":"https://iranpalleet-afk.github.io/iranpalet/","image":"https://iranpalleet-afk.github.io/iranpalet/file_00000000877c81fda17308ff654f722a.webp","address":{"@type":"PostalAddress","addressLocality":"تهران","streetAddress":"جاده شهریار","addressCountry":"IR"},"areaServed":"تهران"}</script>
 </head>
