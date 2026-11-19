@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/</loc><lastmod>2026-11-19</lastmod><image:image><image:loc>https://iranpalleet-afk.github.io/iranpalet/file_00000000877c81fda17308ff654f722a.webp</image:loc><image:title>انبار پالت چوبی ایران پالت</image:title></image:image></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/products.html</loc></url>
-<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-new.html</loc></url>
-<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-used.html</loc></url>
-<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-scrap.html</loc></url>
+<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-new.html</loc><lastmod>2026-11-19</lastmod></url>
+<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-used.html</loc><lastmod>2026-11-19</lastmod></url>
+<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-scrap.html</loc><lastmod>2026-11-19</lastmod></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-sizes.html</loc></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-price.html</loc></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/buying-guide.html</loc></url>
@@ -14,7 +14,7 @@
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-maintenance.html</loc></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/used-pallet-buyer.html</loc></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-export.html</loc></url>
-<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-industrial.html</loc></url>
+<url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-industrial.html</loc><lastmod>2026-11-19</lastmod></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-heavy.html</loc></url>
 <url><loc>https://iranpalleet-afk.github.io/iranpalet/pallet-light.html</loc></url>
 </urlset>
